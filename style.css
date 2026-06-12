@@ -190,6 +190,8 @@ body {
 
 .btn-primary {
     position: relative;
+    display: inline-block;
+    text-decoration: none;
     padding: 1rem 2.5rem;
     background: transparent;
     border: none;
