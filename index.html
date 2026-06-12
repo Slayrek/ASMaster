@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASMaster - Assembly IDE</title>
+    <meta name="description" content="A powerful, modern IDE for MASM32 assembly programming. Features AI integration, custom themes, and blistering fast compilation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Bright Center Glow Behind 3D Figure -->
+    <div class="center-glow"></div>
+
+    <!-- 3D Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="ASMaster Logo" class="nav-logo">
+            <span class="nav-brand">ASMaster</span>
+        </div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#showcase">Showcase</a>
+            <a href="https://github.com" target="_blank" class="github-link">GitHub</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="glow-badge">v1.0.0 is live!</div>
+            <h1 class="hero-title">
+                Code Assembly<br>
+                <span class="gradient-text">Like Never Before</span>
+            </h1>
+            <p class="hero-subtitle">
+                The ultimate modern IDE for x86 MASM32 development. Beautiful design, AI-ready, blazing fast. Fashion is our profession, Assembly is our passion.
+            </p>
+            <div class="hero-actions">
+                <button class="btn-primary">
+                    <span class="btn-content">Download</span>
+                    <div class="btn-glow"></div>
+                </button>
+                <a href="#features" class="btn-secondary">Explore Features</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section id="showcase" class="showcase">
+        <div class="mockup-container">
+            <div class="mockup-glow"></div>
+            <img src="ide_mockup.png" alt="ASMaster IDE Interface" class="ide-mockup">
+        </div>
+    </section>
+
+    <!-- The Story Section -->
+    <section id="story" class="text-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">The Story: <span class="gradient-text">Why I Created This</span></h2>
+            <div class="glass-panel">
+                <p>If you've ever written assembly for Windows, you know the pain. You are forced to use editors straight out of 1998, deal with complex command-line builds, and configure environment variables just to print "Hello World".</p>
+                <p>I built <strong>ASMaster</strong> because I believe low-level programming doesn't have to mean low-quality tooling. I wanted an environment that feels as modern and intelligent as VSCode, but is tailored exclusively for MASM32. No bloated Electron framework, no 10GB `node_modules`. Just raw speed, beautiful design, and seamless AI integration.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section id="features" class="features">
+        <h2 class="section-title">Built for the <span class="gradient-text">Future</span></h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>MASM32 Out of the Box</h3>
+                <p>Zero configuration required. ASMaster comes bundled with the complete MASM32 toolchain. Just write code and hit F5.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>AI Agent Ready</h3>
+                <p>Designed with modern workflows in mind. File synchronization allows AI coding assistants to seamlessly collaborate with you.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Premium Aesthetics</h3>
+                <p>A beautiful dark mode interface with custom themes, syntax highlighting, and an ergonomic workspace layout.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Blazing Fast</h3>
+                <p>Compiles your assembly code in milliseconds. Export standalone .exe files instantly. Performance is our core feature.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats / Banner Section -->
+    <section class="stats-banner">
+        <div class="stat-item">
+            <div class="stat-number gradient-text">10x</div>
+            <div class="stat-label">Faster Setup</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number gradient-text">100%</div>
+            <div class="stat-label">Standalone</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number gradient-text">0</div>
+            <div class="stat-label">External Dependencies</div>
+        </div>
+    </section>
+
+    <!-- Why ASMaster Section -->
+    <section id="why" class="why-section">
+        <div class="why-container">
+            <div class="why-content glass-panel">
+                <h2 class="section-title text-left" style="margin-bottom: 1.5rem;">Why <span class="gradient-text">ASMaster?</span></h2>
+                <p class="why-text">
+                    Assembly programming hasn't fundamentally changed in decades, but the tools we use should. ASMaster bridges the gap between low-level hardware control and high-level developer experience.
+                </p>
+                <ul class="why-list">
+                    <li><span class="check">✓</span> <strong>Zero Configuration:</strong> No complex environment variables or Makefiles. MASM32 is bundled and ready out of the box.</li>
+                    <li><span class="check">✓</span> <strong>AI-Powered Workflow:</strong> Built from the ground up to collaborate with AI coding assistants. Background file syncing means your AI pair programmer is always in loop.</li>
+                    <li><span class="check">✓</span> <strong>Modern Aesthetics:</strong> Say goodbye to software that looks like Windows 95. Enjoy glassmorphism, responsive UI, and premium dark themes while writing raw assembly.</li>
+                </ul>
+            </div>
+            <div class="why-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                    <pre><code><span class="code-dir">.386</span>
+<span class="code-dir">.model</span> <span class="code-str">flat</span>, <span class="code-str">stdcall</span>
+<span class="code-dir">option</span> casemap:none
+
+<span class="code-dir">include</span> \masm32\include\windows.inc
+<span class="code-dir">include</span> \masm32\include\kernel32.inc
+<span class="code-dir">includelib</span> \masm32\lib\kernel32.lib
+
+<span class="code-dir">.data</span>
+    msg <span class="code-dir">db</span> <span class="code-str">"Hello, Modern Assembly!"</span>, 0
+
+<span class="code-dir">.code</span>
+<span class="code-label">start:</span>
+    <span class="code-inst">invoke</span> StdOut, <span class="code-dir">addr</span> msg
+    <span class="code-inst">invoke</span> ExitProcess, 0
+<span class="code-dir">end</span> start</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section id="comparison" class="comparison-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">ASMaster vs <span class="gradient-text">Standard MASM</span></h2>
+            <div class="table-responsive">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Standard qeditor.exe</th>
+                            <th class="highlight">ASMaster</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>User Interface</td>
+                            <td>Windows 98 Style</td>
+                            <td class="highlight">Glassmorphism & Dark Mode</td>
+                        </tr>
+                        <tr>
+                            <td>Syntax Highlighting</td>
+                            <td>Basic / Manual</td>
+                            <td class="highlight">Advanced Regex-based</td>
+                        </tr>
+                        <tr>
+                            <td>Setup Required</td>
+                            <td>High (Paths, Envs)</td>
+                            <td class="highlight">Zero (Bundled Toolchain)</td>
+                        </tr>
+                        <tr>
+                            <td>AI Agent Support</td>
+                            <td>❌ None</td>
+                            <td class="highlight">✅ Real-time File Sync</td>
+                        </tr>
+                        <tr>
+                            <td>Build Process</td>
+                            <td>Manual Batches</td>
+                            <td class="highlight">1-Click Fast Build (F5)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audience Section -->
+    <section id="audience" class="audience-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">Who is this <span class="gradient-text">IDE for?</span></h2>
+            <div class="grid-3">
+                <div class="glass-card">
+                    <h3>🎓 Students</h3>
+                    <p>Learning computer architecture? Stop fighting the tools and start focusing on understanding registers and memory.</p>
+                </div>
+                <div class="glass-card">
+                    <h3>🔒 Security Researchers</h3>
+                    <p>Writing shellcode, testing exploits, or analyzing malware? A clean, fast environment is crucial for low-level research.</p>
+                </div>
+                <div class="glass-card">
+                    <h3>⚡ Performance Geeks</h3>
+                    <p>When C/C++ isn't fast enough. Write highly optimized SIMD instructions with an IDE that doesn't get in your way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="content-wrapper">
+            <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Is ASMaster really free?</h4>
+                    <p>Yes, 100% free and open-source. We believe powerful tools should be accessible to everyone.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do I need to install MASM32 separately?</h4>
+                    <p>No! ASMaster comes bundled with everything you need. Download, extract, and press F5 to compile.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Does it work on Linux or macOS?</h4>
+                    <p>ASMaster is currently designed for Windows natively, specifically targeting the <strong>x86 and x86_64 architectures</strong> for serious low-level system programming.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can AI write assembly for me?</h4>
+                    <p>Yes. ASMaster has an auto-sync feature. If an AI agent (like Claude or Antigravity) edits your files, the IDE reloads them instantly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-box">
+            <h2>Start Coding in <span class="gradient-text">Assembly</span> Today</h2>
+            <p>100% Free. No installation required. Just download and run.</p>
+            <button class="btn-primary" style="margin-top: 2rem;">
+                <span class="btn-content">Download ASMaster</span>
+                <div class="btn-glow"></div>
+            </button>
+            <div class="version-info" style="margin-top: 1rem; color: #a0a0a0; font-size: 0.9rem;">Version 1.0.0 for Windows</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="ASMaster Logo" width="32">
+                <span>ASMaster</span>
+            </div>
+            <p>&copy; 2026 ASMaster Team. Built with passion.</p>
+        </div>
+    </footer>
+
+    <!-- Three.js and Logic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
