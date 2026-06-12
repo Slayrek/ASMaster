@@ -236,6 +236,7 @@ body {
     background: linear-gradient(transparent, rgba(255,255,255,0.3), transparent);
     transform: rotate(45deg) translateY(-100%);
     z-index: 3;
+    pointer-events: none;
     animation: shine 3s infinite;
 }
 
